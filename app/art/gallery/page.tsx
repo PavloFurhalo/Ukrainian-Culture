@@ -3,6 +3,13 @@ import { ArrowLeft } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import Image from 'next/image'
+import BirdsInFlowers from './pics/birds-in-flowers.jpg' 
+import BlackRec from './pics/black-rec.png' 
+import KaterynaShevchenko from './pics/kateryna-shevchenko.jpg' 
+import sonyashnyk from './pics/sonyashnyk.jpeg' 
+import Mamai from './pics/kozak-mamai.jpg'
+import VzeDogoraye from './pics/vze-dogoraye.jpeg'
+
 
 export default function VirtualGalleryPage() {
   return (
@@ -22,12 +29,12 @@ export default function VirtualGalleryPage() {
           <h2 className="text-3xl font-bold mb-4">Шедеври українського мистецтва</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Козак Мамай", artist: "Невідомий художник", year: "18 століття", image: "/placeholder.svg?height=300&width=400" },
-              { title: "Катерина", artist: "Тарас Шевченко", year: "1842", image: "/placeholder.svg?height=300&width=400" },
-              { title: "Чорний квадрат", artist: "Казимир Малевич", year: "1915", image: "/placeholder.svg?height=300&width=400" },
-              { title: "Соняшники", artist: "Катерина Білокур", year: "1950-ті", image: "/placeholder.svg?height=300&width=400" },
-              { title: "Сині птахи у квітах", artist: "Марія Приймаченко", year: "1983", image: "/placeholder.svg?height=300&width=400" },
-              { title: "Вже догорає", artist: "Іван Марчук", year: "1990-ті", image: "/placeholder.svg?height=300&width=400" }
+              { title: "Козак Мамай", artist: "Невідомий художник", year: "18 століття", image: Mamai },
+              { title: "Катерина", artist: "Тарас Шевченко", year: "1842", image: KaterynaShevchenko },
+              { title: "Чорний квадрат", artist: "Казимир Малевич", year: "1915", image: BlackRec },
+              { title: "Соняшники", artist: "Катерина Білокур", year: "1950-ті", image: sonyashnyk },
+              { title: "Сині птахи у квітах", artist: "Марія Приймаченко", year: "1983", image: BirdsInFlowers },
+              { title: "Вже догорає", artist: "Іван Марчук", year: "1990-ті", image: VzeDogoraye }
             ].map((artwork, index) => (
               <div key={index} className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
                 <Image src={artwork.image} alt={artwork.title} width={400} height={300} className="w-full h-48 object-cover" />
@@ -44,7 +51,7 @@ export default function VirtualGalleryPage() {
 
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 Культурний Всесвіт України. Всі права захищені.</p>
+          <p>&copy; 2024 Культурний Всесвіт України.</p>
         </div>
       </footer>
     </div>

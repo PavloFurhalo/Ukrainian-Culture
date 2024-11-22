@@ -39,7 +39,7 @@ export default function EventsPage() {
 
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 Культурний Всесвіт України. Всі права захищені.</p>
+          <p>&copy; 2024 Культурний Всесвіт України.</p>
         </div>
       </footer>
     </div>

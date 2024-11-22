@@ -90,7 +90,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mt-8 text-center text-gray-400">
-            <p>&copy; 2023 Культурний Всесвіт України. Всі права захищені.</p>
+            <p>&copy; 2024 Культурний Всесвіт України.</p>
           </div>
         </div>
       </footer>
